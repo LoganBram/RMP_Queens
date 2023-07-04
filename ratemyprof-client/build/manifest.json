@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Queens RMP Plugin",
+  "description": "This extension is a starting point to create a real Chrome extension",
+  "version": "1.0.0",
+  "content_scripts":[
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action":{
+    "default_popup": "index.html",
+    "default_title": "open"
+  },
+  "permissions": [
+    "scripting", "activeTab"
+  ]
+}
